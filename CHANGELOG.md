@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [5.0.19-TESTNG6-BETA2]
+
 ## [5.0.19-TESTNG6-BETA1]
 
 ## [5.0.18]
