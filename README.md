@@ -4,6 +4,7 @@ A TestNG reporter that uploads the results to a ReportPortal server.
 > We use Google Analytics for sending anonymous usage information as agent's name andversion and the java client's name and version after the successful launch start. This information might help us to improve both ReportPortal backend and client sides. Used by the ReportPortal team only and not for sharing with 3rd parties.
   
 [![Build Status](https://travis-ci.org/reportportal/agent-java-testNG.svg?branch=master)](https://travis-ci.org/reportportal/agent-java-testNG)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG?ref=badge_shield)
 [ ![Download](https://api.bintray.com/packages/epam/reportportal/agent-java-testng/images/download.svg) ](https://bintray.com/epam/reportportal/agent-java-testng/_latestVersion)
 [![Join Slack chat!](https://reportportal-slack-auto.herokuapp.com/badge.svg)](https://reportportal-slack-auto.herokuapp.com)
 [![stackoverflow](https://img.shields.io/badge/reportportal-stackoverflow-orange.svg?style=flat)](http://stackoverflow.com/questions/tagged/reportportal)
@@ -281,3 +282,7 @@ As a sample you can use code for **Override UUID** in run-time
 There are two modules under Example project which represent agent usage with Lo4j and Logback loggers:
 * https://github.com/reportportal/examples-java/tree/master/example-testng-log4j
 * https://github.com/reportportal/examples-java/tree/master/example-testng-logback
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG?ref=badge_large)
