@@ -5,7 +5,7 @@ A TestNG reporter that uploads the results to a ReportPortal server.
 > after a successful launch start. This information might help us to improve both ReportPortal backend and client sides. It is used by the
 > ReportPortal team only and is not supposed for sharing with 3rd parties.
 
-[![Build Status](https://travis-ci.org/reportportal/agent-java-testNG.svg?branch=master)](https://travis-ci.org/reportportal/agent-java-testNG)
+[![CI Build](https://github.com/HardNorth/agent-java-testNG/actions/workflows/ci.yml/badge.svg)](https://github.com/HardNorth/agent-java-testNG/actions/workflows/ci.yml)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHardNorth%2Fagent-java-testNG?ref=badge_shield)
 [ ![Download](https://api.bintray.com/packages/epam/reportportal/agent-java-testng/images/download.svg) ](https://bintray.com/epam/reportportal/agent-java-testng/_latestVersion)
 [![Join Slack chat!](https://reportportal-slack-auto.herokuapp.com/badge.svg)](https://reportportal-slack-auto.herokuapp.com)
