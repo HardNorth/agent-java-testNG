@@ -154,7 +154,7 @@ public class TestNGService implements ITestNGService {
 		rq.setStatus(isLaunchFailed.get() ? ItemStatus.FAILED.name() : ItemStatus.PASSED.name());
 		launch.get().finish(rq);
 		launch.reset();
-		Runtime.getRuntime().removeShutdownHook(shutDownHook);
+		ofNullable(shutDownHook).ifPresent(h->Runtime.getRuntime().removeShutdownHook(h));
 	}
 
 	private void addToTree(ISuite suite, Maybe<String> item) {
