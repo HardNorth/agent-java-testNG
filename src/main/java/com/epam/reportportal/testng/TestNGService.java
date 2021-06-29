@@ -19,7 +19,6 @@ import com.epam.reportportal.annotations.ParameterKey;
 import com.epam.reportportal.annotations.TestCaseId;
 import com.epam.reportportal.annotations.UniqueID;
 import com.epam.reportportal.annotations.attribute.Attributes;
-import com.epam.reportportal.aspect.StepAspect;
 import com.epam.reportportal.listeners.ItemStatus;
 import com.epam.reportportal.listeners.ListenerParameters;
 import com.epam.reportportal.service.Launch;
@@ -143,7 +142,6 @@ public class TestNGService implements ITestNGService {
 	@Override
 	public void startLaunch() {
 		Maybe<String> launchId = this.launch.get().start();
-		StepAspect.addLaunch("default", this.launch.get());
 		ITEM_TREE.setLaunchId(launchId);
 	}
 
@@ -169,7 +167,6 @@ public class TestNGService implements ITestNGService {
 			addToTree(suite, item);
 		}
 		suite.setAttribute(RP_ID, item);
-		StepAspect.setParentId(item);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -203,7 +200,6 @@ public class TestNGService implements ITestNGService {
 				addToTree(testContext, testID);
 			}
 			testContext.setAttribute(RP_ID, testID);
-			StepAspect.setParentId(testID);
 		}
 	}
 
@@ -295,7 +291,6 @@ public class TestNGService implements ITestNGService {
 		Maybe<String> parentId = getConfigParent(testResult, type);
 		Maybe<String> itemID = launch.get().startTestItem(parentId, rq);
 		testResult.setAttribute(RP_ID, itemID);
-		StepAspect.setParentId(itemID);
 	}
 
 	/**
@@ -356,7 +351,6 @@ public class TestNGService implements ITestNGService {
 
 		Maybe<String> stepMaybe = launch.get().startTestItem(getAttribute(testResult.getTestContext(), RP_ID), rq);
 		testResult.setAttribute(RP_ID, stepMaybe);
-		StepAspect.setParentId(stepMaybe);
 		if (launch.get().getParameters().isCallbackReportingEnabled()) {
 			addToTree(testResult, stepMaybe);
 		}
